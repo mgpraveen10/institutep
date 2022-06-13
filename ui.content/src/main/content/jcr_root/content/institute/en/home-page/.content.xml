@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-13T18:15:26.373+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/institute/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home page"
+        sling:resourceType="institute/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <experiencefragment
+                    jcr:created="{Date}2022-06-13T18:11:36.960+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-13T18:11:51.060+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                    fragmentPath="/content/experience-fragments/folder1/exp1/master"
+                    text="first second third"/>
+                <multifield
+                    jcr:created="{Date}2022-06-13T18:13:22.744+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-13T18:15:26.371+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="praveen/multifield">
+                    <multifield jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="ADOBE EXPERIENCE MANAGER A powerhouse combo for your content and digital asset management needs. Get personalized, content-led experiences into market faster with Adobe Experience Manager, which combines digital asset management with the power of a content management system. Watch overview video Adobe Experience Manager Capabilities"
+                            subtitle="its better for Content Management"
+                            title="ADOBE EXPERIENCE MANAGER "/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="Adobe Campaign is the Adobe Experience Cloud solution for cross-channel campaign management. Learn how to use rich customer data to create, coordinate, and deliver dynamic campaigns—through email, mobile, offline channels, and more."
+                            subtitle="It makes Campaign easier"
+                            title="ADOBE CAMPAIGN"/>
+                    </multifield>
+                </multifield>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+    <first/>
+    <second/>
+    <third/>
+</jcr:root>

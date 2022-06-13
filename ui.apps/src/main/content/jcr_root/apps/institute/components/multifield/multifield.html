@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+<div data-sly-use.multi="training.core.models.Multifield" ></div>
+
+
+
+<h1 data-sly-test="${!multi.field }">Add multivalues </h1>
+<div data-sly-list.mult="${multi.field}">
+<h1>${mult.title}</h1>
+<h2> ${mult.subtitle}</h2>
+<p> ${mult.description} </p>
+</div>
+
+
+
+
