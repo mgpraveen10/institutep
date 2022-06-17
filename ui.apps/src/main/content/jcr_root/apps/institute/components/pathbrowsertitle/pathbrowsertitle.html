@@ -1,0 +1,14 @@
+<h1 data-sly-test="${!resource.getChildren}">Add multivalues </h1> 
+<div data-sly-list.con="${resource.getChildren}"> 
+
+
+
+   <div data-sly-test="${con.name == 'multifield'}"> 
+
+        <ul data-sly-list.title="${con.getChildren}">
+            <h1> ${title.title}</h1>
+           <img class="image"  src="${title.linkpath}" > </img>
+
+
+            </ul>
+</div>

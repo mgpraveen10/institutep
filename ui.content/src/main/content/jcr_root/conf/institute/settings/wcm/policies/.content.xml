@@ -8,12 +8,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
-                        jcr:lastModified="{Date}2022-06-13T18:16:29.442+05:30"
+                        jcr:lastModified="{Date}2022-06-15T12:05:51.289+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="institute Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,group:institute,/apps/institute/components/form/container,/apps/praveen/multifield,/apps/praveen/login]"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/apps/abcdef/components/praveen/link,group:institute,/apps/institute/components/form/container,group:praveen]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">

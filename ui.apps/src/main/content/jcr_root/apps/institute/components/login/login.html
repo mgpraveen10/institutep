@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="text-align:center;" >
+<h2>LOGIN here</h2>
+
+<form name="Login" id="Login" method="POST">
+user name : <input type="text" name="user" value="">
+<br>Password : <input type="password" name="password"
+value=""> <br>
+<br> <input type="Submit" name="submit" id="submit">
+</form>
+<div id="rgstr" name="rgstr"></div>
+<div id="fullnm" name="fullnm"></div>
+</div>
+</body>
+
+
+
+<script>
+// this is the id of the form
+
+
+
+$("#Login").submit(function(e) {
+
+
+
+e.preventDefault(); // avoid to execute the actual submit of the form.
+
+
+
+var form = $(this);
+
+
+
+var url = "/bin/userlogin";
+
+
+
+$.ajax({
+
+
+
+type : "POST",
+
+
+
+url : url,
+
+
+
+data : form.serialize(), // serializes the form's elements.
+
+
+
+success : function(data, textStatus, jqXHR) {
+if(data.status=="202"){
+alert("success")
+window.open("http://localhost:4502/editor.html/content/institute/en/home-page.html")
+}
+else
+{
+alert("fail")
+location.href="https://www.youtube.com/watch?v=bZf7KrKyDfg&list=PL2rn7ZBYpBjtPyy5-pEBxwwIowcIoVv40&index=61"
+}
+//write your logic that you need to perform on sucess
+
+
+
+
+},
+error : function(XMLHttpRequest, textStatus, errorThrown) {
+//write your logic that you need to perform on error
+}
+
+
+
+});
+
+
+
+});
+</script>
+
+
+
+</html>

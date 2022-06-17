@@ -39,19 +39,16 @@
                                                         <title
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            fieldLabel="title"
                                                             fieldlabel="title"
+                                                            fieldLabel="title"
                                                             name="./title"/>
-                                                        <subtitle
+                                                        <linkpath
                                                             jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            fieldLabel="subtitle"
-                                                            name="./subtitle"/>
-                                                        <description
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                            fieldLabel="description"
-                                                            name="./description"/>
+                                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                            fieldDescription=" select path"
+                                                            fieldLabel="browse the path"
+                                                            name="./linkpath"
+                                                            rootPath="/content"/>
                                                     </items>
                                                 </column>
                                             </items>
